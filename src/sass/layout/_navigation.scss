@@ -1,0 +1,93 @@
+@use '../modules/variables';
+@use '../modules/mixins';
+@use '../modules/animations';
+
+.navigation {
+   width: 100%;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   &__list, &__cv-container {
+      display: none;
+   }
+   &__list {
+      color: variables.$yellow;
+      text-align: center;
+   }
+   &__list li {
+      display: inline-block;
+   }
+   &__cv-container {
+      text-align: right;
+   }
+   &__arrow {
+      display: inline-block;
+      vertical-align: middle;
+      width: 9px;
+      height: 9px;
+   }
+
+   @include mixins.tablet-view {
+      justify-content: space-between;
+
+      &__flex-item {
+         min-width: 200px;
+      }
+      .navigation-button {
+         display: none;
+      }
+      &__list, &__cv-container {
+         display: block;
+      }
+   }
+}
+.navigation-button {
+   background-color: #00000000;
+   width: 30px;
+   height: 14px;
+   padding: 0;
+   margin: 0;
+   border: none;
+   position: relative;
+   cursor: pointer;
+
+   &__line {
+      background-color: variables.$yellow;
+      width: 100%;
+      height: 2px;
+      position: absolute;
+      left: 0;
+      display: block;
+      transition: transform 300ms ease, opacity 300ms ease, width 300ms ease, top 300ms ease, bottom 300ms ease;
+
+      &:nth-child(1) {
+         top: 0;
+      }
+      &:nth-child(2) {
+         top: 50%;
+         transform: translateY(-50%);
+      }
+      &:nth-child(3) {
+         bottom: 0;
+      }
+   }
+}
+.navigation-button--active {
+   .navigation-button__line:nth-child(1) {
+      top: 50%;
+      width: 15px;
+      transform: translateX(30%) translateY(-6px) rotate(45deg);
+   }
+   .navigation-button__line:nth-child(2) {
+      top: 50%;
+      width: 15px;
+      transform: translateX(30%) translateY(-6px) rotate(45deg);
+   }
+   .navigation-button__line:nth-child(3) {
+      bottom: 50%;
+      width: 15px;
+      transform: translateX(5px) translateY(6px) rotate(-45deg);
+   }
+}

@@ -1,0 +1,10 @@
+@mixin tablet-view {
+   @media screen and (min-width: 800px) {
+      @content;
+   }
+}
+@mixin desktop-view {
+   @media screen and (min-width: 1280px) {
+      @content;
+   }
+}

@@ -1,0 +1,193 @@
+@font-face {
+  font-family: "firaCode";
+  font-weight: normal;
+  font-style: normal;
+  src: local("FiraCode-Medium"), url("./FiraCode-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "firaCode";
+  font-weight: bold;
+  font-style: normal;
+  src: local("FiraCode-Bold"), url("./FiraCode-Bold.ttf") format("truetype");
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "firaCode", "Courier New", Courier, monospace;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #0D0D0D;
+  color: #ECECEC;
+}
+
+a {
+  color: #ECECEC;
+  text-decoration: none;
+  transition: color 300ms ease;
+}
+a:hover {
+  color: #FFCC00;
+}
+
+.wrapper {
+  padding: 0 0.8rem;
+}
+@media screen and (min-width: 800px) {
+  .wrapper {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 750px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .wrapper {
+    max-width: 1024px;
+  }
+}
+
+.navigation {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation__list, .navigation__cv-container {
+  display: none;
+}
+.navigation__list {
+  color: #FFCC00;
+  text-align: center;
+}
+.navigation__list li {
+  display: inline-block;
+}
+.navigation__cv-container {
+  text-align: right;
+}
+.navigation__arrow {
+  display: inline-block;
+  vertical-align: middle;
+  width: 9px;
+  height: 9px;
+}
+@media screen and (min-width: 800px) {
+  .navigation {
+    justify-content: space-between;
+  }
+  .navigation__flex-item {
+    min-width: 200px;
+  }
+  .navigation .navigation-button {
+    display: none;
+  }
+  .navigation__list, .navigation__cv-container {
+    display: block;
+  }
+}
+
+.navigation-button {
+  background-color: rgba(0, 0, 0, 0);
+  width: 30px;
+  height: 14px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+.navigation-button__line {
+  background-color: #FFCC00;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  display: block;
+  transition: transform 300ms ease, opacity 300ms ease, width 300ms ease, top 300ms ease, bottom 300ms ease;
+}
+.navigation-button__line:nth-child(1) {
+  top: 0;
+}
+.navigation-button__line:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.navigation-button__line:nth-child(3) {
+  bottom: 0;
+}
+
+.navigation-button--active .navigation-button__line:nth-child(1) {
+  top: 50%;
+  width: 15px;
+  transform: translateX(30%) translateY(-6px) rotate(45deg);
+}
+.navigation-button--active .navigation-button__line:nth-child(2) {
+  top: 50%;
+  width: 15px;
+  transform: translateX(30%) translateY(-6px) rotate(45deg);
+}
+.navigation-button--active .navigation-button__line:nth-child(3) {
+  bottom: 50%;
+  width: 15px;
+  transform: translateX(5px) translateY(6px) rotate(-45deg);
+}
+
+/*# sourceMappingURL=styles.css.map */
