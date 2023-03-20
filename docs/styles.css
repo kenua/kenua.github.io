@@ -73,6 +73,11 @@ table {
   border-spacing: 0;
 }
 
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
 body {
   background-color: #0D0D0D;
   color: #ECECEC;
@@ -88,7 +93,7 @@ a:hover {
 }
 
 .wrapper {
-  padding: 0 0.8rem;
+  padding: 0 16px;
 }
 @media screen and (min-width: 800px) {
   .wrapper {
@@ -101,6 +106,52 @@ a:hover {
   .wrapper {
     max-width: 1024px;
   }
+}
+
+.heading {
+  font-size: 3.2rem;
+  line-height: 1.5;
+  font-weight: bold;
+  margin-bottom: 24px;
+  display: flex;
+}
+.heading::before {
+  content: "//";
+  color: #FFCC00;
+  margin-right: 20px;
+}
+
+.regular-text {
+  font-size: 1.6rem;
+  line-height: 32px;
+}
+
+.lines-pattern {
+  position: relative;
+}
+.lines-pattern:hover .lines-pattern__lines {
+  transform: translate(-5px, 5px);
+}
+.lines-pattern:hover .lines-pattern__content {
+  transform: translate(-5px, 5px);
+}
+.lines-pattern__lines {
+  background-image: repeating-linear-gradient(-45deg, #FFCC00, #FFCC00 3px, rgba(0, 0, 0, 0) 3px, rgba(0, 0, 0, 0) 12px);
+  width: 100%;
+  height: 100%;
+  display: block;
+  transform: translate(-10px, 10px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: transform 300ms ease;
+}
+.lines-pattern__content {
+  position: relative;
+  transform: translate(10px, -10px);
+  transition: transform 300ms ease;
+  z-index: 1;
 }
 
 .navigation {
@@ -188,6 +239,39 @@ a:hover {
   bottom: 50%;
   width: 15px;
   transform: translateX(5px) translateY(6px) rotate(-45deg);
+}
+
+.about {
+  margin-top: 24px;
+}
+.about__picture {
+  width: 235px;
+  height: 235px;
+  margin-top: 24px;
+  margin-left: auto;
+}
+.about .lines-pattern__content {
+  background-color: #0D0D0D;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 800px) {
+  .about {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+  }
+  .about__picture {
+    flex-shrink: 0;
+    margin-top: 0;
+    margin-left: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about__picture {
+    margin-left: 141px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
