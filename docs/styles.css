@@ -155,6 +155,7 @@ a:hover {
 }
 
 .navigation {
+  font-size: 1.6rem;
   width: 100%;
   height: 50px;
   display: flex;
@@ -176,9 +177,8 @@ a:hover {
 }
 .navigation__arrow {
   display: inline-block;
-  vertical-align: middle;
-  width: 9px;
-  height: 9px;
+  width: 12px;
+  height: 12px;
 }
 @media screen and (min-width: 800px) {
   .navigation {
