@@ -33,7 +33,7 @@ a {
    font-size: 3.2rem;
    line-height: 1.5;
    font-weight: bold;
-   margin-bottom: 24px;
+   margin-bottom: 103px;
    display: flex;
 
    &::before {
@@ -47,7 +47,7 @@ a {
    line-height: 32px;
 }
 .lines-pattern {
-   $distance: 10px;
+   $distance: 15px;
 
    position: relative;
    &:hover &__lines {
@@ -80,7 +80,6 @@ a {
    }
    &__content {
       position: relative;
-      transform: translate($distance, -$distance);
       transition: transform 300ms ease;
       z-index: 1;
    }
