@@ -9,47 +9,60 @@
    <script src="./main.js" defer></script>
 </head>
 <body>
-   <!--NAVIGATION-->
-   <nav class="navigation wrapper">
-      <div class="navigation__flex-item">
-         <button class="navigation-button">
-            <span class="navigation-button__line"></span>
-            <span class="navigation-button__line"></span>
-            <span class="navigation-button__line"></span>
-         </button>
-      </div>
-      <ul class="navigation__list navigation__flex-item">
-         <li><a href="#about" class="navigation__anchor">About</a></li>
-         ·
-         <li><a href="#skills" class="navigation__anchor">Skills</a></li>
-         ·
-         <li><a href="#projects" class="navigation__anchor">Projects</a></li>
-      </ul>
-      <div class="navigation__cv-container navigation__flex-item">
-         <a href="#cv" class="navigation__cv-button" download>
-            Download CV
-            <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="navigation__arrow">
-               <line x1="7.93934" y1="10.9393" x2="16.9393" y2="1.93934" stroke="#FFCC00" stroke-width="3"/>
-               <line x1="1.06066" y1="1.93934" x2="10.0607" y2="10.9393" stroke="#FFCC00" stroke-width="3"/>
-            </svg>
+   <div class="wrapper">
+      <!--SOCIALMEDIA-->
+      <div class="socialmedia">
+         <a href="#" class="socialmedia__anchor">
+            <span class="socialmedia__text socialmedia__github">Github</span>
+            <svg class="socialmedia__icon" enable-background="new 0 0 100 100" height="100" viewBox="0 0 100 100" width="100" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m49.998 11.963c-21.537 0-38.998 17.462-38.998 39.002 0 17.231 11.172 31.849 26.671 37.003 1.952.361 2.662-.84 2.662-1.877 0-.924-.034-3.375-.051-6.633-10.849 2.359-13.138-5.229-13.138-5.229-1.774-4.505-4.331-5.703-4.331-5.703-3.541-2.418.269-2.371.269-2.371 3.914.277 5.974 4.018 5.974 4.018 3.478 5.96 9.129 4.235 11.35 3.243.353-2.525 1.363-4.24 2.476-5.217-8.659-.984-17.763-4.33-17.763-19.274 0-4.259 1.519-7.741 4.013-10.468-.399-.982-1.74-4.947.383-10.319 0 0 3.274-1.048 10.726 4.001 3.109-.869 6.446-1.303 9.763-1.316 3.312.014 6.65.447 9.763 1.316 7.447-5.049 10.716-4.001 10.716-4.001 2.128 5.372.788 9.337.388 10.319 2.5 2.727 4.008 6.209 4.008 10.468 0 14.979-9.117 18.279-17.805 19.241 1.398 1.205 2.646 3.59 2.646 7.229 0 5.211-.047 9.416-.047 10.695 0 1.045.701 2.26 2.681 1.873 15.482-5.165 26.646-19.772 26.646-36.998 0-21.54-17.461-39.002-39.002-39.002z" fill="#181616" fill-rule="evenodd"/></svg>
+         </a>
+         <a href="#" class="socialmedia__anchor">
+            <svg class="socialmedia__icon" enable-background="new 0 0 100 100" height="100" viewBox="0 0 100 100" width="100" xmlns="http://www.w3.org/2000/svg"><path d="m80.667 14h-61.352c-2.934 0-5.315 2.325-5.315 5.188v61.617c0 2.867 2.381 5.195 5.315 5.195h61.352c2.936 0 5.333-2.328 5.333-5.195v-61.617c0-2.863-2.397-5.188-5.333-5.188zm-45.313 61.354h-10.684v-34.359h10.684zm-5.342-39.057c-3.423 0-6.19-2.774-6.19-6.194 0-3.415 2.767-6.189 6.19-6.189 3.415 0 6.189 2.774 6.189 6.189 0 3.42-2.774 6.194-6.189 6.194zm45.338 39.057h-10.667v-16.708c0-3.986-.078-9.111-5.551-9.111-5.558 0-6.405 4.341-6.405 8.822v16.998h-10.675v-34.36h10.245v4.692h.146c1.426-2.7 4.91-5.549 10.106-5.549 10.806 0 12.802 7.114 12.802 16.369v18.847z"/></svg>
+            <span class="socialmedia__text socialmedia__linkedin">Linkedin</span>
          </a>
       </div>
-   </nav>
-   <!--ABOUT-->
-   <section class="about wrapper" id="about">
-      <div class="about__content">
-         <h1 class="heading">Hi I'm Juanesteban 👋</h1>
-         <p class="regular-text">
-            I'm a self-taught frontend developer eager to learn new skills and grow in the tech industry, and aspire to become a full stack developer. Currently looking for the right opportunity to work in an environment that will help me develop my skills.
-         </p>
-      </div>
-      <div class="about__picture lines-pattern">
-         <div class="lines-pattern__lines"></div>
-         <div class="lines-pattern__content">
-            <img src="./profile-pic.png" alt="picture" class="about__img">
+      <!--NAVIGATION-->
+      <nav class="navigation">
+         <div class="navigation__flex-item">
+            <button class="navigation-button">
+               <span class="navigation-button__line"></span>
+               <span class="navigation-button__line"></span>
+               <span class="navigation-button__line"></span>
+            </button>
          </div>
-      </div>
-   </section>
+         <ul class="navigation__list navigation__flex-item">
+            <li><a href="#about" class="navigation__anchor">About</a></li>
+            ·
+            <li><a href="#skills" class="navigation__anchor">Skills</a></li>
+            ·
+            <li><a href="#projects" class="navigation__anchor">Projects</a></li>
+         </ul>
+         <div class="navigation__cv-container navigation__flex-item">
+            <a href="#cv" class="navigation__cv-button" download>
+               Download CV
+               <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="navigation__arrow">
+                  <line x1="7.93934" y1="10.9393" x2="16.9393" y2="1.93934" stroke="#FFCC00" stroke-width="3"/>
+                  <line x1="1.06066" y1="1.93934" x2="10.0607" y2="10.9393" stroke="#FFCC00" stroke-width="3"/>
+               </svg>
+            </a>
+         </div>
+      </nav>
+      <!--ABOUT-->
+      <section class="about" id="about">
+         <div class="about__content">
+            <h1 class="heading">Hi I'm Juanesteban 👋</h1>
+            <p class="regular-text">
+               I'm a self-taught frontend developer eager to learn new skills and grow in the tech industry, and aspire to become a full stack developer. Currently looking for the right opportunity to work in an environment that will help me develop my skills.
+            </p>
+         </div>
+         <div class="about__picture lines-pattern">
+            <div class="lines-pattern__lines"></div>
+            <div class="lines-pattern__content">
+               <img src="./profile-pic.png" alt="picture" class="about__img">
+            </div>
+         </div>
+      </section>
+   </div>
    <script>
       let btn = document.querySelector('.navigation-button');
 

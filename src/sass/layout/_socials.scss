@@ -1,0 +1,67 @@
+@use '../modules/variables';
+@use '../modules/mixins';
+
+.socialmedia {
+   display: none;
+
+   &__anchor {
+      color: variables.$yellow;
+      display: block;
+      position: relative;
+   }
+   &__icon, &__icon path {
+      fill: variables.$yellow;
+   }
+   &__icon  {
+      display: block;
+   }
+   &__icon {
+      width: 3.2rem;
+      height: 3.2rem;
+      margin: 0 auto;
+   }
+   &__text {
+      display: none;
+   }
+
+   @include mixins.tablet-view {
+      position: fixed;
+      top: 50%;
+      left: 14px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      row-gap: 29px;
+   }
+
+   @include mixins.desktop-view {
+      width: 32px;
+      left: auto;
+      transform: translateX(calc(-100% - 94px)) translateY(-50%);
+
+      &__anchor:hover &__text {
+         opacity: 1;
+      }
+      &__anchor:hover &__github {
+         transform: translateY(-15px);
+      }
+      &__anchor:hover &__linkedin {
+         transform: translateY(15px);
+      }
+      &__text {
+         font-size: 1.6rem;
+         text-align: center;
+         display: block;
+         transition: transform 300ms ease, opacity 300ms ease;
+         position: absolute;
+         left: -50%;
+         opacity: 0;
+      }
+      &__github {
+         top: -15px;
+      }
+      &__linkedin {
+         bottom: -15px;
+      }
+   }
+}

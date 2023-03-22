@@ -16,6 +16,7 @@ a {
    }
 }
 .wrapper {
+   position: relative;
    padding: 0 16px;
 
    @include mixins.tablet-view {
