@@ -5,6 +5,11 @@
 body {
    background-color: variables.$black;
    color: variables.$white;
+   padding-top: 50px;
+
+   @include mixins.tablet-view {
+      padding-top: 0;
+   }
 }
 a {
    color: variables.$white;

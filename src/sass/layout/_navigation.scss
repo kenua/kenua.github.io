@@ -4,11 +4,16 @@
 
 .navigation {
    font-size: 1.6rem;
+   background-color: variables.$black;
    width: 100%;
    height: 50px;
    display: flex;
    justify-content: center;
    align-items: center;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 10;
 
    &__list, &__cv-container {
       display: none;
@@ -30,6 +35,7 @@
    }
 
    @include mixins.tablet-view {
+      position: static;
       justify-content: space-between;
 
       &__flex-item {
@@ -90,4 +96,53 @@
       width: 15px;
       transform: translateX(5px) translateY(6px) rotate(-45deg);
    }
+}
+.mobile-menu {
+   background-color: variables.$black;
+   width: 100%;
+   height: calc(100% - 50px);
+   padding: 0 16px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   position: fixed;
+   top: 50px;
+   left: 110%;
+   z-index: 10;
+   transition: left 300ms ease-in-out;
+
+   &__li {
+      font-size: 3rem;
+      margin-bottom: 40px;
+
+      &::before {
+         content: '·';
+         color: variables.$yellow;
+         display: inline-block;
+         margin-right: 20px;
+      }
+   }
+   .socialmedia--navigation {
+      display: flex;
+      flex-direction: column;
+      row-gap: 32px;
+   }
+   &__contact {
+      text-align: center;
+      color: variables.$yellow;
+      margin-top: 64px;
+      margin-bottom: 50px;
+   }
+   &__contact-email {
+      font-size: 2rem;
+      color: variables.$yellow;
+      display: block;
+   }
+
+   @include mixins.tablet-view {
+      left: 110%!important;
+   }
+}
+.mobile-menu--visible {
+   left: 0;
 }
