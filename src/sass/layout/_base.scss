@@ -5,11 +5,6 @@
 body {
    background-color: variables.$black;
    color: variables.$white;
-   padding-top: 50px;
-
-   @include mixins.tablet-view {
-      padding-top: 0;
-   }
 }
 a {
    color: variables.$white;
@@ -31,7 +26,7 @@ a {
    }
 
    @include mixins.desktop-view {
-      max-width: 1024px;
+      max-width: 1000px;
    }
 }
 .heading {

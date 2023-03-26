@@ -1,6 +1,5 @@
 @use '../modules/variables';
 @use '../modules/mixins';
-@use '../modules/animations';
 
 .navigation {
    font-size: 1.6rem;
@@ -10,14 +9,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   position: fixed;
-   top: 0;
-   left: 0;
-   z-index: 10;
 
-   &__list, &__cv-container {
-      display: none;
-   }
    &__list {
       color: variables.$yellow;
       text-align: center;
@@ -27,6 +19,7 @@
    }
    &__cv-container {
       text-align: right;
+      display: none;
    }
    &__arrow {
       display: inline-block;
@@ -35,114 +28,13 @@
    }
 
    @include mixins.tablet-view {
-      position: static;
       justify-content: space-between;
 
       &__flex-item {
          min-width: 200px;
       }
-      .navigation-button {
-         display: none;
-      }
-      &__list, &__cv-container {
+      &__cv-container {
          display: block;
       }
    }
-}
-.navigation-button {
-   background-color: #00000000;
-   width: 30px;
-   height: 14px;
-   padding: 0;
-   margin: 0;
-   border: none;
-   position: relative;
-   cursor: pointer;
-
-   &__line {
-      background-color: variables.$yellow;
-      width: 100%;
-      height: 2px;
-      position: absolute;
-      left: 0;
-      display: block;
-      transition: transform 300ms ease, opacity 300ms ease, width 300ms ease, top 300ms ease, bottom 300ms ease;
-
-      &:nth-child(1) {
-         top: 0;
-      }
-      &:nth-child(2) {
-         top: 50%;
-         transform: translateY(-50%);
-      }
-      &:nth-child(3) {
-         bottom: 0;
-      }
-   }
-}
-.navigation-button--active {
-   .navigation-button__line:nth-child(1) {
-      top: 50%;
-      width: 15px;
-      transform: translateX(30%) translateY(-6px) rotate(45deg);
-   }
-   .navigation-button__line:nth-child(2) {
-      top: 50%;
-      width: 15px;
-      transform: translateX(30%) translateY(-6px) rotate(45deg);
-   }
-   .navigation-button__line:nth-child(3) {
-      bottom: 50%;
-      width: 15px;
-      transform: translateX(5px) translateY(6px) rotate(-45deg);
-   }
-}
-.mobile-menu {
-   background-color: variables.$black;
-   width: 100%;
-   height: calc(100% - 50px);
-   padding: 0 16px;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   position: fixed;
-   top: 50px;
-   left: 110%;
-   z-index: 10;
-   transition: left 300ms ease-in-out;
-
-   &__li {
-      font-size: 3rem;
-      margin-bottom: 40px;
-
-      &::before {
-         content: '·';
-         color: variables.$yellow;
-         display: inline-block;
-         margin-right: 20px;
-      }
-   }
-   .socialmedia--navigation {
-      display: flex;
-      flex-direction: column;
-      row-gap: 32px;
-   }
-   &__contact {
-      text-align: center;
-      color: variables.$yellow;
-      margin-top: 64px;
-      margin-bottom: 50px;
-   }
-   &__contact-email {
-      font-size: 2rem;
-      color: variables.$yellow;
-      display: block;
-   }
-
-   @include mixins.tablet-view {
-      left: 110%!important;
-   }
-}
-.mobile-menu--visible {
-   left: 0;
 }
