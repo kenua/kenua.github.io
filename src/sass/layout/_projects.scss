@@ -71,7 +71,7 @@
    }
 
    @include mixins.tablet-view {
-      grid-template-areas: 1fr 1fr;
+      grid-template-columns: 300px 1fr;
 
       &__img-container {
          grid-column: 1;
@@ -104,7 +104,7 @@
       column-gap: 24px;
 
       .regular-text {
-         max-width: none;
+         max-width: 500px;
       }
       &__technologies {
          margin-top: -32px;
