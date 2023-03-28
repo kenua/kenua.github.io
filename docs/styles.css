@@ -93,6 +93,14 @@ a:hover {
   color: #FFCC00;
 }
 
+.anchor {
+  color: #FFCC00;
+  border-bottom: 1px solid #FFCC00;
+}
+.anchor:hover {
+  color: #ECECEC;
+}
+
 .wrapper {
   position: relative;
   padding: 0 16px;

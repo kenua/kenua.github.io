@@ -15,6 +15,14 @@ a {
       color: variables.$yellow;
    }
 }
+.anchor {
+   color: variables.$yellow;
+   border-bottom: 1px solid variables.$yellow;
+
+   &:hover {
+      color: variables.$white;
+   }
+}
 .wrapper {
    position: relative;
    padding: 0 16px;
