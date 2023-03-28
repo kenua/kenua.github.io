@@ -205,6 +205,9 @@ a:hover {
   height: 235px;
   margin: 40px auto 0;
 }
+.about__img {
+  border: 1px solid #FFCC00;
+}
 .about .lines-pattern__content {
   background-color: #0D0D0D;
   width: 100%;

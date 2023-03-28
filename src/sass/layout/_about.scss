@@ -13,6 +13,9 @@
       height: 235px;
       margin: 40px auto 0;
    }
+   &__img {
+      border: 1px solid variables.$yellow;
+   }
    .lines-pattern__content {
       background-color: variables.$black;
       width: 100%;
