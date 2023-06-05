@@ -1,0 +1,45 @@
+@use '../modules/variables' as *;
+@use '../modules/mixins' as *;
+
+.header {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 35px;
+
+   &__name {
+      font-weight: bold;
+      margin-bottom: 18px;
+   }
+   &-navbar__ul {
+      display: flex;
+      column-gap: 16px;
+   }
+   &-navbar__anchor {
+      fill: $white;
+      
+      &:hover {
+         fill: $yellow;
+      }
+   }
+   &-navbar__icon {
+      fill: inherit;
+      vertical-align: middle;
+   
+      path {
+         fill: inherit;
+         transition: fill 200ms ease-in-out;
+      }
+   }
+
+   @include tablet-view {
+      flex-direction: row;
+      justify-content: space-between;
+      height: 50px;
+      margin-top: 60px;
+
+      &-navbar__ul {
+         column-gap: 42px;
+      }
+   }
+}

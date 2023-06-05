@@ -1,0 +1,21 @@
+@font-face {
+   font-family: 'Inconsolata';
+   font-weight: 400;
+   font-style: normal;
+   src: local("Inconsolata-Regular"), 
+        url("../Inconsolata-Regular.ttf") format("truetype");
+}
+@font-face {
+   font-family: 'Inconsolata';
+   font-weight: 500;
+   font-style: normal;
+   src: local("Inconsolata-Medium"), 
+        url("../Inconsolata-Medium.ttf") format("truetype");
+}
+@font-face {
+   font-family: 'Inconsolata';
+   font-weight: bold;
+   font-style: normal;
+   src: local("Inconsolata-Bold"), 
+        url("../Inconsolata-Bold.ttf") format("truetype");
+}

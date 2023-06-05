@@ -1,0 +1,38 @@
+@use './variables' as *;
+
+.f-inconsolata {
+   font-family: 'Inconsolata', 'Courier New', Courier, monospace;
+}
+// use a loop to generate .fs-... styles
+.fs-1 {
+   font-size: 16px;
+}
+.fs-2 {
+   font-size: 18px;
+}
+.fs-3 {
+   font-size: 24px;
+}
+.fs-4 {
+   font-size: 32px;
+}
+.wrapper {
+   padding: 0 16px;
+}
+.anchor {
+   transition: color 200ms ease-in-out;
+
+   &:hover {
+      color: $yellow;
+
+      .line {
+         border-color: $yellow;
+      }
+   }
+
+   .line {
+      border-bottom: 1px dashed $white;
+      padding-bottom: 2px;
+      transition: border-color 200ms ease-in-out;
+   }
+}
