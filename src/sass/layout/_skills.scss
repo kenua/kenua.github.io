@@ -1,87 +1,130 @@
-@use '../modules/variables';
-@use '../modules/mixins';
+@use '../modules/mixins' as *;
+@use '../modules/variables' as *;
 
 .skills {
-   margin-bottom: 241px;
-}
-.skills-grid {
-   display: grid;
-   grid-template-columns: repeat(2, 125px);
-   column-gap: 80px;
-   row-gap: 46px;
-   justify-content: space-evenly;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 10px;
 
    &__item {
-      &:hover .lines-pattern__content  {
-         background-color: variables.$black;
-      }
-      &:hover .skills-grid__icon path  {
-         fill: variables.$yellow;
-      }
-   }
-   .lines-pattern {
-      width: 125px;
-   }
-   .lines-pattern__content {
-      height: 125px;
-      background-color: variables.$yellow;
       display: flex;
-      flex-direction: column;
+      width: 100%;
+   }
+   &__icon-container {
+      background-color: $white;
+      width: 64px;
+      height: 64px;
+      display: flex;
       justify-content: center;
       align-items: center;
-      transition: background-color 300ms ease, transform 300ms ease;;
    }
-   &__icon {
-      width: 100px;
-      height: 100px;
-
-      path {
-         transition: fill 300ms ease;
-      }
+   &__text-container {
+      flex-grow: 1;
+      border: 1px dashed $white;
+      border-left-width: 0;
    }
-   &__title {
-      text-align: center;
-      font-size: 1.6rem;
-      color: variables.$yellow;
-      margin-top: 29px;
+   &__heading {
+      line-height: 62px;
    }
 
-   @include mixins.tablet-view {
-      grid-template-columns: repeat(3, 125px);
+   @include tablet-view {
+      max-width: 722px;
+      margin: 0 auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      column-gap: 10px;
 
-      &__item:last-child {
-         grid-column: 2;
-      }
-   }
-
-   @include mixins.desktop-view {
-      grid-template-columns: repeat(9, 1fr);
-      column-gap: 0;
-
-      &__item:nth-child(1) {
-         grid-column: 2;
-      }
-      &__item:nth-child(2) {
-         grid-column: 4;
-      }
-      &__item:nth-child(3) {
-         grid-column: 6;
-      }
-      &__item:nth-child(4) {
-         grid-column: 8;
-      }
-
-      &__item:nth-child(5) {
-         grid-row: 2;
-         grid-column: 3;
-      }
-      &__item:nth-child(6) {
-         grid-row: 2;
-         grid-column: 5;
-      }
-      &__item:nth-child(7) {
-         grid-row: 2;
-         grid-column: 7;
+      &__item {
+         width: 356px;
       }
    }
 }
+
+// @use '../modules/variables';
+// @use '../modules/mixins';
+
+// .skills {
+//    margin-bottom: 241px;
+// }
+// .skills-grid {
+//    display: grid;
+//    grid-template-columns: repeat(2, 125px);
+//    column-gap: 80px;
+//    row-gap: 46px;
+//    justify-content: space-evenly;
+
+//    &__item {
+//       &:hover .lines-pattern__content  {
+//          background-color: variables.$black;
+//       }
+//       &:hover .skills-grid__icon path  {
+//          fill: variables.$yellow;
+//       }
+//    }
+//    .lines-pattern {
+//       width: 125px;
+//    }
+//    .lines-pattern__content {
+//       height: 125px;
+//       background-color: variables.$yellow;
+//       display: flex;
+//       flex-direction: column;
+//       justify-content: center;
+//       align-items: center;
+//       transition: background-color 300ms ease, transform 300ms ease;;
+//    }
+//    &__icon {
+//       width: 100px;
+//       height: 100px;
+
+//       path {
+//          transition: fill 300ms ease;
+//       }
+//    }
+//    &__title {
+//       text-align: center;
+//       font-size: 1.6rem;
+//       color: variables.$yellow;
+//       margin-top: 29px;
+//    }
+
+//    @include mixins.tablet-view {
+//       grid-template-columns: repeat(3, 125px);
+
+//       &__item:last-child {
+//          grid-column: 2;
+//       }
+//    }
+
+//    @include mixins.desktop-view {
+//       grid-template-columns: repeat(9, 1fr);
+//       column-gap: 0;
+
+//       &__item:nth-child(1) {
+//          grid-column: 2;
+//       }
+//       &__item:nth-child(2) {
+//          grid-column: 4;
+//       }
+//       &__item:nth-child(3) {
+//          grid-column: 6;
+//       }
+//       &__item:nth-child(4) {
+//          grid-column: 8;
+//       }
+
+//       &__item:nth-child(5) {
+//          grid-row: 2;
+//          grid-column: 3;
+//       }
+//       &__item:nth-child(6) {
+//          grid-row: 2;
+//          grid-column: 5;
+//       }
+//       &__item:nth-child(7) {
+//          grid-row: 2;
+//          grid-column: 7;
+//       }
+//    }
+// }
