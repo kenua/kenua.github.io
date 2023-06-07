@@ -1,3 +1,4 @@
+@use './mixins' as *;
 @use './variables' as *;
 
 .f-inconsolata {
@@ -16,8 +17,16 @@
 .fs-4 {
    font-size: 32px;
 }
+.f-bold {
+   font-weight: bold;
+}
 .wrapper {
    padding: 0 16px;
+
+   @include tablet-view {
+      max-width: 1024px;
+      margin: 0 auto;
+   }
 }
 .anchor {
    transition: color 200ms ease-in-out;
@@ -35,4 +44,7 @@
       padding-bottom: 2px;
       transition: border-color 200ms ease-in-out;
    }
+}
+.para {
+   line-height: 32px;
 }

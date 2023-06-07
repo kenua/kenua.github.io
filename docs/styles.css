@@ -115,8 +115,18 @@ p a {
   font-size: 32px;
 }
 
+.f-bold {
+  font-weight: bold;
+}
+
 .wrapper {
   padding: 0 16px;
+}
+@media screen and (min-width: 850px) {
+  .wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
 }
 
 .anchor {
@@ -132,6 +142,10 @@ p a {
   border-bottom: 1px dashed #FFF;
   padding-bottom: 2px;
   transition: border-color 200ms ease-in-out;
+}
+
+.para {
+  line-height: 32px;
 }
 
 .header {
@@ -171,6 +185,36 @@ p a {
   }
   .header-navbar__ul {
     column-gap: 42px;
+  }
+}
+
+.intro {
+  margin-top: 95px;
+}
+.intro__profile-picture {
+  width: 154px;
+  border: 1px solid #FFCC00;
+  margin: 0 auto;
+}
+.intro__heading {
+  font-size: 24px;
+  margin: 24px 0 36px;
+}
+@media screen and (min-width: 850px) {
+  .intro {
+    max-width: 702px;
+    margin: 143px auto 191px;
+    display: flex;
+  }
+  .intro__profile-picture {
+    align-self: baseline;
+  }
+  .intro__heading {
+    font-size: 32px;
+    margin: 0 0 36px;
+  }
+  .intro__text {
+    margin-left: 25px;
   }
 }
 
