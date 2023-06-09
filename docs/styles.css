@@ -272,7 +272,7 @@ p a {
 }
 .skills__text-container {
   flex-grow: 1;
-  border: 1px dashed #FFF;
+  border: 1px solid #FFF;
   border-left-width: 0;
 }
 .skills__heading {
