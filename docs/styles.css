@@ -100,19 +100,19 @@ p a {
 }
 
 .fs-1 {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 .fs-2 {
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .fs-3 {
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 .fs-4 {
-  font-size: 32px;
+  font-size: 3.2rem;
 }
 
 .f-bold {
@@ -218,7 +218,7 @@ p a {
   margin: 0 auto;
 }
 .intro__heading {
-  font-size: 24px;
+  font-size: 2.4rem;
   margin: 24px 0 36px;
 }
 @media screen and (min-width: 850px) {
@@ -233,7 +233,7 @@ p a {
     align-self: baseline;
   }
   .intro__heading {
-    font-size: 32px;
+    font-size: 3.2rem;
     margin: 0 0 36px;
   }
   .intro__text {
