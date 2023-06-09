@@ -280,4 +280,40 @@ p a {
   }
 }
 
+.project-item {
+  max-width: 500px;
+  border: 1px dashed #FFF;
+  padding: 10px;
+  margin: 0 auto 30px;
+  transition: color 200ms ease-in-out, border-color 200ms ease-in-out;
+}
+.project-item:hover {
+  color: #FFCC00;
+  border-color: #FFCC00;
+}
+.project-item__title {
+  font-size: 1.8rem;
+  margin: 12px 0 10px;
+}
+.project-item__technologies {
+  margin-bottom: 30px;
+}
+.project-item__image {
+  width: 100%;
+}
+@media screen and (min-width: 850px) {
+  .project-item {
+    max-width: 700px;
+    display: flex;
+  }
+  .project-item__title {
+    font-size: 2.4rem;
+    margin: 10px 0 10px;
+  }
+  .project-item__image {
+    width: 280px;
+    margin-right: 21px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
