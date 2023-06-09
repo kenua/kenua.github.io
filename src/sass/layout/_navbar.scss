@@ -11,26 +11,6 @@
       font-weight: bold;
       margin-bottom: 18px;
    }
-   &-navbar__ul {
-      display: flex;
-      column-gap: 16px;
-   }
-   &-navbar__anchor {
-      fill: $white;
-      
-      &:hover {
-         fill: $yellow;
-      }
-   }
-   &-navbar__icon {
-      fill: inherit;
-      vertical-align: middle;
-   
-      path {
-         fill: inherit;
-         transition: fill 200ms ease-in-out;
-      }
-   }
 
    @include tablet-view {
       flex-direction: row;
@@ -38,7 +18,7 @@
       height: 50px;
       margin-top: 60px;
 
-      &-navbar__ul {
+      .navbar {
          column-gap: 42px;
       }
    }

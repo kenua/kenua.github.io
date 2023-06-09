@@ -67,3 +67,32 @@
 .para {
    line-height: 32px;
 }
+.navbar {
+   display: flex;
+   column-gap: 16px;
+
+   &__anchor {
+      fill: $white;
+      
+      &:hover {
+         fill: $yellow;
+      }
+   }
+   &__icon {
+      fill: inherit;
+      vertical-align: middle;
+   
+      path {
+         fill: inherit;
+         transition: fill 200ms ease-in-out;
+      }
+   }
+}
+.navbar--column {
+   text-align: center;
+   flex-direction: column;
+   row-gap: 16px;
+}
+.footer {
+   padding: 33px 0;
+}
