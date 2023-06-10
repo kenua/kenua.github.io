@@ -4,6 +4,10 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+::selection {
+	background-color: $yellow;
+	color: $black;	
+}
 * {
    box-sizing: border-box;
 }
