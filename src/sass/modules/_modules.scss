@@ -1,98 +1,33 @@
-@use './mixins' as *;
 @use './variables' as *;
 
-.f-inconsolata {
-   font-family: 'Inconsolata', 'Courier New', Courier, monospace;
-}
-// use a loop to generate .fs-... styles
-.fs-1 {
-   font-size: 1.6rem;
-}
-.fs-2 {
-   font-size: 1.8rem;
-}
-.fs-3 {
-   font-size: 2.4rem;
-}
-.fs-4 {
-   font-size: 3.2rem;
-}
-.f-bold {
-   font-weight: bold;
-}
-.subheading {
-   text-align: center;
-   margin-bottom: 80px;
-
-   &::before {
-      content: "";
-      background-color: $white;
-      width: 228px;
-      height: 1px;
-      display: block;
-      margin: 0 auto 32px;
-   }
-}
-.align-center {
-   text-align: center;
-}
 .wrapper {
-   padding: 0 16px;
-
-   @include tablet-view {
-      max-width: 1024px;
-      margin: 0 auto;
-   }
-}
-.mg-section {
-   margin-bottom: 191px;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 16px;
 }
 .anchor {
-   transition: color 200ms ease-in-out;
+    fill: $c-lime;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: $c-lime;
+    transition: color 300ms ease;
 
-   &:hover {
-      color: $yellow;
+    &:hover {
+        fill: $c-white;
+        color: $c-white;
+    }
 
-      .line {
-         border-color: $yellow;
-      }
-   }
-
-   .line {
-      border-bottom: 1px dashed $white;
-      padding-bottom: 2px;
-      transition: border-color 200ms ease-in-out;
-   }
+    &__icon {
+        fill: inherit;
+        vertical-align: middle;
+        margin-right: 4px;
+        transition: fill 300ms ease;
+    }
 }
-.para {
-   line-height: 32px;
+.anchor--flex {
+    display: inline-flex;
+    align-items: center;
 }
-.navbar {
-   display: flex;
-   column-gap: 16px;
-
-   &__anchor {
-      fill: $white;
-      
-      &:hover {
-         fill: $yellow;
-      }
-   }
-   &__icon {
-      fill: inherit;
-      vertical-align: middle;
-   
-      path {
-         fill: inherit;
-         transition: fill 200ms ease-in-out;
-      }
-   }
-}
-.navbar--column {
-   text-align: center;
-   flex-direction: column;
-   row-gap: 16px;
-}
-.footer {
-   padding: 33px 0;
+.fw-bold {
+    font-weight: 600;
 }

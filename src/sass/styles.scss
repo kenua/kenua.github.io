@@ -1,10 +1,7 @@
-@use './modules/fonts.scss';
-@use './modules/variables.scss';
-@use './modules/reset.scss';
-@use './modules/modules.scss';
-@use './modules/mixins.scss';
-
-@use './layout/navbar.scss';
-@use './layout/intro.scss';
-@use './layout/skills.scss';
-@use './layout/projects';
+@use './modules/variables';
+@use './modules/mixins';
+@use './modules/fonts';
+@use './modules/normalize';
+@use './modules/reset';
+@use './modules/modules';
+@use './layout/header';
