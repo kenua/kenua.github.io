@@ -1,9 +1,11 @@
 import Header from './components/Header';
+import Projects from './components/Projects';
 
 function App() {
   return (
     <>
       <Header />
+      <Projects />
       <p>
         🚧 website under construction 🚧<br />
         Lorem ipsum dolor sit amet consectetur adipisicing elit. 

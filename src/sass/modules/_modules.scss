@@ -10,7 +10,7 @@
     text-transform: capitalize;
     font-weight: 600;
     color: $c-lime;
-    transition: color 300ms ease;
+    transition: color $text-transition;
 
     &:hover {
         fill: $c-white;
@@ -21,7 +21,7 @@
         fill: inherit;
         vertical-align: middle;
         margin-right: 4px;
-        transition: fill 300ms ease;
+        transition: fill $text-transition;
     }
 }
 .anchor--flex {
@@ -30,4 +30,15 @@
 }
 .fw-bold {
     font-weight: 600;
+}
+.heading {
+    font-size: 3.2rem;
+    font-weight: 900;
+    margin-bottom: 32px;
+
+    &::before {
+        content: '#';
+        display: inline-block;
+        margin-right: 12px;
+    }
 }
