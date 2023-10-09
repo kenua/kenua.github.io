@@ -1,9 +1,24 @@
 @use './variables' as *;
+@use './mixins' as *;
 
 .wrapper {
     max-width: 1024px;
     margin: 0 auto;
     padding: 0 16px;
+}
+.wrapper--flex {
+    margin-top: 114px;
+    margin-bottom: 114px;
+
+    @include breakpoint(980px) {
+        display: grid;
+        grid-template-columns: 612px 1px 1fr;
+        column-gap: 32px;
+    }
+}
+.vertical-line {
+    background-color: $c-black;
+    opacity: .1;
 }
 .anchor {
     fill: $c-lime;
@@ -41,4 +56,14 @@
         display: inline-block;
         margin-right: 12px;
     }
+}
+.skill-box {
+    font-weight: 600;
+    background-color: $c-lime;
+    color: $c-black;
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    display: inline-block;
 }

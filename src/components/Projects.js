@@ -58,7 +58,7 @@ function Projects() {
     });
 
     return (
-        <section>
+        <section className="projects">
             <h2 id="projects" className="heading">Projects</h2>
             { projectsList }
         </section>

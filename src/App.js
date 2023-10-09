@@ -1,20 +1,16 @@
 import Header from './components/Header';
 import Projects from './components/Projects';
+import Skills from './components/Skills';
 
 function App() {
   return (
     <>
       <Header />
-      <Projects />
-      <p>
-        🚧 website under construction 🚧<br />
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Ratione porro rerum voluptatum, soluta magni incidunt 
-        sapiente accusamus vitae architecto dolorum deserunt 
-        dolorem quos blanditiis, quidem eos officia? Sint totam 
-        quia impedit voluptatum ipsum dicta magni perferendis cum 
-        earum. Repudiandae ipsam totam dolore ut enim nihil, 
-        nostrum maiores deleniti natus illo.</p>
+      <div className="wrapper wrapper--flex">
+        <Projects />
+        <div className="vertical-line"></div>
+        <Skills/>
+      </div>
     </>
   );
 }
