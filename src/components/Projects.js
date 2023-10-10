@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { ReactComponent as Arrow } from '../assets/images/arrow.svg';
 
 // dummy dada
@@ -35,11 +36,44 @@ const projectsData = [
     },
 ];
 
+const fadeVariants = {
+    hiddenFromLeft: {
+        opacity: 0,
+        x: -100,
+    },
+    hiddenFromRight: {
+        opacity: 0,
+        x: 100,
+    },
+    visible: {
+        opacity: 1,
+        x: 0,
+        transition: {
+            duration: 1.5,
+            type: 'spring',
+        },
+    },
+};
+
 function Projects() {
 
     const projectsList = projectsData.map((project, i) => {
+        let isOdd = ((i+1) % 2 > 0 ) ? true : false;
+
         return (
-            <a key={i} href={project.url} className="project" tabIndex="0">
+            <motion.a 
+                key={i} 
+                href={project.url} 
+                className="project" 
+                tabIndex="0"
+                variants={fadeVariants}
+                initial={isOdd ? 'hiddenFromLeft' : 'hiddenFromRight'}
+                whileInView="visible"
+                viewport={{ 
+                    once: true,
+                    amount: 0.5,
+                }}
+            >
                 <div className="project__circle"></div>
 
                 <article className="project__content">
@@ -53,7 +87,7 @@ function Projects() {
                         </p>
                     </div>
                 </article>
-            </a>
+            </motion.a>
         );
     });
 

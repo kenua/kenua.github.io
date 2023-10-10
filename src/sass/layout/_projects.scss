@@ -75,7 +75,7 @@
         transition: fill $text-transition;
     }
 
-    @include breakpoint(800px) {
+    @include breakpoint(600px) {
         &__content {
             grid-template-columns: 230px 1fr;
             column-gap: 44px;
