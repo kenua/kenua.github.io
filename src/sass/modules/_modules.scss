@@ -7,11 +7,12 @@
     padding: 0 16px;
 }
 .wrapper--flex {
-    margin-top: 114px;
-    margin-bottom: 114px;
+    display: grid;
+    row-gap: 32px;
+    margin-top: 164px;
+    margin-bottom: 164px;
 
     @include breakpoint(980px) {
-        display: grid;
         grid-template-columns: 612px 1px 1fr;
         column-gap: 32px;
     }
@@ -49,10 +50,12 @@
 .heading {
     font-size: 3.2rem;
     font-weight: 900;
-    margin-bottom: 32px;
+    margin-bottom: 64px;
 
     &::before {
-        content: '#';
+        content: '//';
+        letter-spacing: 5px;
+        color: $c-lime;
         display: inline-block;
         margin-right: 12px;
     }
