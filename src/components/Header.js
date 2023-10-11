@@ -32,11 +32,9 @@ function Header() {
                     <h1 className="header__h1 fw-bold">Juanesteban Guerra</h1>
                     <h2 className="header__h2 fw-bold">Front-end Developer</h2>
                     <p className="header__para">
-                        I am a self-taught front-end developer aspiring to become 
-                        a <span className="nowrap">full-stack</span> developer 
-                        and enter the IT world. Currently, I am studying and 
-                        building projects to put into  practice everything I 
-                        learn.
+                        I'm a self-taught front-end developer aspiring to become a 
+                        full-stack developer. Currently, I'm studying and building
+                        projects to put into practice everything I learn.
                     </p>
                     <div className="header__hyperlinks">
                         <a 
@@ -49,7 +47,7 @@ function Header() {
                             Github
                         </a>
                         <a 
-                            href="www.linkedin.com/in/juanesteban-guerra-medina" 
+                            href="https://www.linkedin.com/in/juanesteban-guerra-medina" 
                             target="_blank" 
                             className="anchor anchor--flex" 
                             tabIndex="0"

@@ -4,36 +4,36 @@ import weatherAppScreenshot from '../assets/images/weather-app-screenshot.jpg';
 import todoListScreenshot from '../assets/images/to-do-list-screenshot.jpg';
 import mhBestiaryScreenshot from '../assets/images/mh-bestiary-screenshot.jpg';
 import battleshipScreenshot from '../assets/images/battleship-screenshot.jpg';
-
+import portfolioScreenshot from '../assets/images/portfolio-screenshot.jpg';
 
 const projectsData = [
     {
         name: 'Weather App',
-        desc: 'Weather app built with React.js and animated with Framer Motion library.',
+        desc: 'Built a weather app where users can select or enter the coordinates of a location and request its weather information using the Fetch API.',
         url: 'https://weather-5l2sper7d-kenua.vercel.app',
         imageUrl: weatherAppScreenshot,
     },
     {
-        name: 'Portfolio v2',
-        desc: 'My portfolio website. Build with React.js and Sass.',
-        url: 'https://weather-5l2sper7d-kenua.vercel.app',
-        imageUrl: 'https://github.com/kenua/battleship-game/blob/master/OG-image.png?raw=true',
-    },
-    {
         name: 'Battleship Game',
-        desc: 'Built a battleship game where users can play against a CPU. The purpose of the project was to practice Test-Driven-Development.',
+        desc: 'Made a battleship game in which users can play against a CPU. The purpose of the project was to practice Test-Driven Development.',
         url: 'https://kenua.github.io/battleship-game/',
         imageUrl: battleshipScreenshot,
     },
     {
         name: 'To-do list App',
-        desc: 'Built a to-do list app where users can create todos and manage them.',
+        desc: "Built a to-do list app in which users can create and manage tasks. I utilized the localStorage API to preserve users' tasks.",
         url: 'https://kenua.github.io/todo-list/',
         imageUrl: todoListScreenshot,
     },
     {
+        name: 'Portfolio v2',
+        desc: 'Made my portfolio with React.js, Sass, and Framer Motion.',
+        url: '#',
+        imageUrl: portfolioScreenshot,
+    },
+    {
         name: 'MH Bestiary',
-        desc: 'Built a single page application where an admin can upload information into a database.',
+        desc: 'Developed a single-page application where an admin can upload information to a database.',
         url: 'https://kenua.github.io/monster-hunter-bestiary/',
         imageUrl: mhBestiaryScreenshot,
     },
