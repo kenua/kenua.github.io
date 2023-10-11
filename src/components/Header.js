@@ -3,6 +3,7 @@ import { ReactComponent as LinkedinIcon } from '../assets/images/linkedinIcon.sv
 import { ReactComponent as EnvelopeIcon } from '../assets/images/envelopeIcon.svg';
 import { ReactComponent as LetterIcon } from '../assets/images/letterIcon.svg';
 import { ReactComponent as BottomWaves } from '../assets/images/bottomWaves.svg';
+import resume from '../assets/Resume.pdf';
 
 function Header() {
     return (
@@ -34,24 +35,25 @@ function Header() {
                     <h2 className="header__h2 fw-bold">Front-end Developer</h2>
                     <p className="header__para">
                         I am a self-taught front-end developer aspiring to become 
-                        a full-stack developer and enter the IT world. Currently, 
-                        I am studying and building projects to put into  practice 
-                        everything I learn.
+                        a <span className="nowrap">full-stack</span> developer 
+                        and enter the IT world. Currently, I am studying and 
+                        building projects to put into  practice everything I 
+                        learn.
                     </p>
                     <div className="header__hyperlinks">
-                        <a href="#" className="anchor anchor--flex">
+                        <a href="https://github.com/kenua" target="_blank" className="anchor anchor--flex">
                             <GithubIcon className="anchor__icon" />
                             Github
                         </a>
-                        <a href="#" className="anchor anchor--flex">
+                        <a href="www.linkedin.com/in/juanesteban-guerra-medina" target="_blank" className="anchor anchor--flex">
                             <LinkedinIcon className="anchor__icon" />
                             Linkedin
                         </a>
-                        <a href="#" className="anchor anchor--flex">
+                        <a href="mailto:juanestebanmedinag@gmail.com" className="anchor anchor--flex">
                             <EnvelopeIcon className="anchor__icon" />
                             Email
                         </a>
-                        <a href="#" className="anchor anchor--flex">
+                        <a href={resume} target="_blank" className="anchor anchor--flex">
                             <LetterIcon className="anchor__icon" />
                             Resume
                         </a>

@@ -1,38 +1,41 @@
 import { motion } from 'framer-motion';
 import { ReactComponent as Arrow } from '../assets/images/arrow.svg';
+import weatherAppScreenshot from '../assets/images/weather-app-screenshot.jpg';
+import todoListScreenshot from '../assets/images/to-do-list-screenshot.jpg';
+import mhBestiaryScreenshot from '../assets/images/mh-bestiary-screenshot.jpg';
+import battleshipScreenshot from '../assets/images/battleship-screenshot.jpg';
 
-// dummy dada
-// remove later 🧹
+
 const projectsData = [
     {
-        name: 'weather-app',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quaerat, officia sunt in cupiditate reiciendis.',
+        name: 'Weather App',
+        desc: 'Weather app built with React.js and animated with Framer Motion library.',
         url: 'https://weather-5l2sper7d-kenua.vercel.app',
-        imageUrl: 'https://github.com/kenua/battleship-game/blob/master/OG-image.png?raw=true',
-    },
-    {
-        name: 'Battleship',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quaerat, officia sunt in cupiditate reiciendis.',
-        url: 'https://weather-5l2sper7d-kenua.vercel.app',
-        imageUrl: 'https://github.com/kenua/battleship-game/blob/master/OG-image.png?raw=true',
-    },
-    {
-        name: 'Todo-list',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quaerat, officia sunt in cupiditate reiciendis.',
-        url: 'https://weather-5l2sper7d-kenua.vercel.app',
-        imageUrl: 'https://github.com/kenua/battleship-game/blob/master/OG-image.png?raw=true',
+        imageUrl: weatherAppScreenshot,
     },
     {
         name: 'Portfolio v2',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quaerat, officia sunt in cupiditate reiciendis.',
+        desc: 'My portfolio website. Build with React.js and Sass.',
         url: 'https://weather-5l2sper7d-kenua.vercel.app',
         imageUrl: 'https://github.com/kenua/battleship-game/blob/master/OG-image.png?raw=true',
     },
     {
-        name: 'MH BEstiary',
-        desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quaerat, officia sunt in cupiditate reiciendis.',
-        url: 'https://weather-5l2sper7d-kenua.vercel.app',
-        imageUrl: 'https://github.com/kenua/battleship-game/blob/master/OG-image.png?raw=true',
+        name: 'Battleship Game',
+        desc: 'Built a battleship game where users can play against a CPU. The purpose of the project was to practice Test-Driven-Development.',
+        url: 'https://kenua.github.io/battleship-game/',
+        imageUrl: battleshipScreenshot,
+    },
+    {
+        name: 'To-do list App',
+        desc: 'Built a to-do list app where users can create todos and manage them.',
+        url: 'https://kenua.github.io/todo-list/',
+        imageUrl: todoListScreenshot,
+    },
+    {
+        name: 'MH Bestiary',
+        desc: 'Built a single page application where an admin can upload information into a database.',
+        url: 'https://kenua.github.io/monster-hunter-bestiary/',
+        imageUrl: mhBestiaryScreenshot,
     },
 ];
 
@@ -64,6 +67,7 @@ function Projects() {
             <motion.a 
                 key={i} 
                 href={project.url} 
+                target="_blank"
                 className="project" 
                 tabIndex="0"
                 variants={fadeVariants}
@@ -77,7 +81,14 @@ function Projects() {
                 <div className="project__circle"></div>
 
                 <article className="project__content">
-                    <img src={project.imageUrl} className="project__image" />
+                    <img 
+                        src={project.imageUrl} 
+                        className="project__image" 
+                        width="230" 
+                        height="240" 
+                        loading="lazy" 
+                        alt=""
+                    />
                     <div className="project__flexbox">
                         <h3 className="project__name fw-bold">{project.name}</h3>
                         <p className="project__desc">{project.desc}</p>
