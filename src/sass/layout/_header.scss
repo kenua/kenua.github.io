@@ -143,6 +143,10 @@
         animation: rotateCircle 15s linear infinite;
     }
     &__circle--img {
+        background-image: url('../../assets/images/BWprofile.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
         z-index: 4;
     }
 

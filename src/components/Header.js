@@ -1,9 +1,7 @@
 import { ReactComponent as GithubIcon } from '../assets/images/githubIcon.svg';
 import { ReactComponent as LinkedinIcon } from '../assets/images/linkedinIcon.svg';
 import { ReactComponent as EnvelopeIcon } from '../assets/images/envelopeIcon.svg';
-import { ReactComponent as LetterIcon } from '../assets/images/letterIcon.svg';
 import { ReactComponent as BottomWaves } from '../assets/images/bottomWaves.svg';
-import resume from '../assets/Resume.pdf';
 
 function Header() {
     return (
@@ -41,21 +39,31 @@ function Header() {
                         learn.
                     </p>
                     <div className="header__hyperlinks">
-                        <a href="https://github.com/kenua" target="_blank" className="anchor anchor--flex">
+                        <a 
+                            href="https://github.com/kenua" 
+                            target="_blank" 
+                            className="anchor anchor--flex" 
+                            tabIndex="0"
+                        >
                             <GithubIcon className="anchor__icon" />
                             Github
                         </a>
-                        <a href="www.linkedin.com/in/juanesteban-guerra-medina" target="_blank" className="anchor anchor--flex">
+                        <a 
+                            href="www.linkedin.com/in/juanesteban-guerra-medina" 
+                            target="_blank" 
+                            className="anchor anchor--flex" 
+                            tabIndex="0"
+                        >
                             <LinkedinIcon className="anchor__icon" />
                             Linkedin
                         </a>
-                        <a href="mailto:juanestebanmedinag@gmail.com" className="anchor anchor--flex">
+                        <a 
+                            href="mailto:juanestebanmedinag@gmail.com" 
+                            className="anchor anchor--flex" 
+                            tabIndex="0"
+                        >
                             <EnvelopeIcon className="anchor__icon" />
                             Email
-                        </a>
-                        <a href={resume} target="_blank" className="anchor anchor--flex">
-                            <LetterIcon className="anchor__icon" />
-                            Resume
                         </a>
                     </div>
                 </div>
