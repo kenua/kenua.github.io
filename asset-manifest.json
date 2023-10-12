@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/kenua.github.io/static/css/main.881a3a99.css",
-    "main.js": "/kenua.github.io/static/js/main.af6cd238.js",
-    "static/media/Nunito-Regular.ttf": "/kenua.github.io/static/media/Nunito-Regular.99a3b019e7727ac19479.ttf",
-    "static/media/Nunito-Bold.ttf": "/kenua.github.io/static/media/Nunito-Bold.f4338623f94e6079de97.ttf",
-    "static/media/Nunito-Black.ttf": "/kenua.github.io/static/media/Nunito-Black.969e95ce4a719e43f654.ttf",
-    "static/media/mh-bestiary-screenshot.jpg": "/kenua.github.io/static/media/mh-bestiary-screenshot.0cc12373c19d47b75687.jpg",
-    "static/media/battleship-screenshot.jpg": "/kenua.github.io/static/media/battleship-screenshot.ec6c5e09666c8a4b5f24.jpg",
-    "static/media/to-do-list-screenshot.jpg": "/kenua.github.io/static/media/to-do-list-screenshot.29457073de00cd361fa9.jpg",
-    "static/media/BWprofile.png": "/kenua.github.io/static/media/BWprofile.45ceabb73547e6754c07.png",
-    "static/media/portfolio-screenshot.jpg": "/kenua.github.io/static/media/portfolio-screenshot.388cf170f275da9779c5.jpg",
-    "static/media/weather-app-screenshot.jpg": "/kenua.github.io/static/media/weather-app-screenshot.d42b0c6085ce3fd3d57d.jpg",
-    "static/media/linkedinIcon.svg": "/kenua.github.io/static/media/linkedinIcon.0953013f62a31138a9cac01237a93140.svg",
-    "static/media/githubIcon.svg": "/kenua.github.io/static/media/githubIcon.bacc3ec7969b575fc1b80d6b04ed3a0d.svg",
-    "static/media/bottomWaves.svg": "/kenua.github.io/static/media/bottomWaves.841d8e968233a9ce3bc5d2e7a2db25d5.svg",
-    "index.html": "/kenua.github.io/index.html",
-    "static/media/envelopeIcon.svg": "/kenua.github.io/static/media/envelopeIcon.f04b2b856160b4281fe8c2e9c6fba10e.svg",
-    "static/media/arrow.svg": "/kenua.github.io/static/media/arrow.1837f02af45132b5bad5480b70b6126b.svg",
-    "main.881a3a99.css.map": "/kenua.github.io/static/css/main.881a3a99.css.map",
-    "main.af6cd238.js.map": "/kenua.github.io/static/js/main.af6cd238.js.map"
+    "main.css": "/static/css/main.af6a6ea7.css",
+    "main.js": "/static/js/main.f2f406b0.js",
+    "static/media/Nunito-Regular.ttf": "/static/media/Nunito-Regular.99a3b019e7727ac19479.ttf",
+    "static/media/Nunito-Bold.ttf": "/static/media/Nunito-Bold.f4338623f94e6079de97.ttf",
+    "static/media/Nunito-Black.ttf": "/static/media/Nunito-Black.969e95ce4a719e43f654.ttf",
+    "static/media/mh-bestiary-screenshot.jpg": "/static/media/mh-bestiary-screenshot.0cc12373c19d47b75687.jpg",
+    "static/media/battleship-screenshot.jpg": "/static/media/battleship-screenshot.ec6c5e09666c8a4b5f24.jpg",
+    "static/media/to-do-list-screenshot.jpg": "/static/media/to-do-list-screenshot.29457073de00cd361fa9.jpg",
+    "static/media/BWprofile.png": "/static/media/BWprofile.45ceabb73547e6754c07.png",
+    "static/media/portfolio-screenshot.jpg": "/static/media/portfolio-screenshot.388cf170f275da9779c5.jpg",
+    "static/media/weather-app-screenshot.jpg": "/static/media/weather-app-screenshot.d42b0c6085ce3fd3d57d.jpg",
+    "static/media/linkedinIcon.svg": "/static/media/linkedinIcon.0953013f62a31138a9cac01237a93140.svg",
+    "static/media/githubIcon.svg": "/static/media/githubIcon.bacc3ec7969b575fc1b80d6b04ed3a0d.svg",
+    "static/media/bottomWaves.svg": "/static/media/bottomWaves.841d8e968233a9ce3bc5d2e7a2db25d5.svg",
+    "index.html": "/index.html",
+    "static/media/envelopeIcon.svg": "/static/media/envelopeIcon.f04b2b856160b4281fe8c2e9c6fba10e.svg",
+    "static/media/arrow.svg": "/static/media/arrow.1837f02af45132b5bad5480b70b6126b.svg",
+    "main.af6a6ea7.css.map": "/static/css/main.af6a6ea7.css.map",
+    "main.f2f406b0.js.map": "/static/js/main.f2f406b0.js.map"
   },
   "entrypoints": [
-    "static/css/main.881a3a99.css",
-    "static/js/main.af6cd238.js"
+    "static/css/main.af6a6ea7.css",
+    "static/js/main.f2f406b0.js"
   ]
 }
